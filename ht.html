@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Page</title>
+    <style>
+      .highlight-first {
+        color: rgb(47, 212, 193);
+      }
+      .highlight-middle {
+        color: rgb(32, 32, 211);
+      }
+      .default-button {
+        background-color: rgb(59, 130, 246); /* Tailwind's bg-blue-500 */
+        color: white;
+        padding: 10px 20px;
+        border-radius: 8px;
+        border: none;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+      .hovered-button {
+        background-color: rgb(32, 201, 151); /* Custom green color */
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      <span class="highlight-first">Welcome Everyone</span>
+      To The Technology World
+      <span class="highlight-middle">OF FULL STACK</span>
+    </h1>
+
+    <h4>HELLO</h4>
+
+    <button id="hoverButton" class="default-button">Click Me</button>
+
+    <script>
+      // Get the button element
+      const button = document.getElementById("hoverButton");
+
+      // Add event listeners for mouseover and mouseout
+      button.addEventListener("mouseover", function () {
+        this.classList.add("hovered-button");
+      });
+
+      button.addEventListener("mouseout", function () {
+        this.classList.remove("hovered-button");
+      });
+    </script>
+  </body>
+</html>

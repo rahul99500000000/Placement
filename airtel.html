@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Airtel Website</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #dbd4d4;
+      }
+
+      header {
+        background-color: #ff0000;
+        padding: 20px;                                                                                                                                                                  
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .logo {
+        color: white;
+        font-size: 24px;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+      }
+      .logo img {
+        width: 40px;
+        height: auto;
+        margin-right: 10px;
+      }
+
+      nav {
+        display: flex;
+        gap: 10px;
+      }
+      nav a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        padding: 10px;
+        transition: background-color 0.3s;
+      }
+      nav a:hover {
+        background-color: #f1e8ef;
+        color: #cc4ccc;
+      }
+
+      .main-content {
+        display: flex;
+        justify-content: space-between;
+        padding: 40px;
+      }
+      .welcome-text {
+        font-size: 36px;
+        color: rgb(197, 53, 53);
+        font-weight: bold;
+      }
+      .image-container img {
+        width: 400px;
+        height: auto;
+        border-radius: 0px;
+        border: 2px solid #ccc;
+      }
+
+      .button-container {
+        margin-top: 20px;
+      }
+      .button-container a {
+        display: inline-block;
+        text-decoration: none;
+        font-size: 18px;
+        padding: 10px 20px;
+        margin-right: 10px;
+        border-radius: 5px;
+        transition: background-color 0.3s, color 0.3s;
+      }
+      .button-container a:first-child {
+        background-color: #007bff; /* Services button: Blue */
+        color: white;
+      }
+      .button-container a:first-child:hover {
+        background-color: #e8f1ff;
+        color: #007bff;
+      }
+      .button-container a:last-child {
+        background-color: #28a745; /* Contact button: Green */
+        color: white;
+      }
+      .button-container a:last-child:hover {
+        background-color: #e9fce8;
+        color: #28a745;
+      }
+
+      footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 20px;
+      }
+      footer a {
+        color: #ff5722;
+        text-decoration: none;
+      }
+
+      /* Floating Icon Styles */
+      .floating-icons {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
+      .floating-icons a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        background-color: #ff0000;
+        color: white;
+        border-radius: 50%;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        text-decoration: none;
+        transition: transform 0.3s, background-color 0.3s;
+      }
+      .floating-icons a:hover {
+        transform: scale(1.2);
+        background-color: #cc4ccc;
+      }
+      .floating-icons svg {
+        width: 24px;
+        height: 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="air1.jpg" alt="Airtel Logo" />
+        <span>AIRTEL</span>
+      </div>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">About us</a>
+        <a href="#">Postpaid</a>
+        <a href="#">Services</a>
+        <a href="#">Customer Support</a>
+      </nav>
+    </header>
+
+    <div class="main-content">
+      <div class="welcome-section">
+        <p class="welcome-text">AIRTEL WELCOMES YOU TO THE 5G WORLD!</p>
+        <p style="color: rgb(0, 0, 0); font-size-adjust: 1">
+          Let's nourish the new technology
+        </p>
+
+        <div class="button-container">
+          <a href="#services-section">Services</a>
+          <a href="#contact-section">Contact</a>
+        </div>
+      </div>
+      <div class="air.jpg">
+        <img src="air4.jpg" alt="Airtel Image" />
+      </div>
+    </div>
+
+    <!-- Floating Icons -->
+    <div class="floating-icons">
+      <a href="tel:+18001234567" title="Call Us">
+        <!-- Phone Icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+          <path d="M3.654 1.328a.678.678 0 0 1 .736-.156c.261.104 5.522 2.3 5.708 2.387a.678.678 0 0 1 .326.564c0 .708-.166 1.385-.416 2.012a.678.678 0 0 1-.546.344c-.153.015-.576.048-.91.048-.666 0-1.26-.06-1.96-.11a17.492 17.492 0 0 1-2.003-.344.678.678 0 0 1-.344-.546c-.04-.556-.062-1.005-.062-1.51 0-.647.018-1.3.048-1.888z"/>
+          <path fill-rule="evenodd" d="M15.7 11.042c-.05-.12-1.114-2.147-1.114-2.147-.16-.31-.497-.486-.823-.429-.326.057-.584.292-.672.617-.048.18-.467.465-.467.465s-.333.161-.635.347c-.58.362-1.083.814-1.645 1.317l-.003.003a.678.678 0 0 1-.548.151.678.678 0 0 1-.478-.548 14.835 14.835 0 0 1-.12-.663c-.021-.154-.04-.31-.057-.466l.001-.003c-.015-.197-.03-.394-.047-.591l-.008-.086-.001-.01-.002-.03-.003-.046-.003-.047-.008-.11-.001-.013c-.008-.11-.019-.22-.031-.33l-.001-.017c-.009-.118-.02-.236-.031-.353l-.002-.034c-.011-.117-.023-.235-.035-.352l-.003-.033c-.013-.117-.026-.233-.041-.35l-.003-.024c-.015-.116-.03-.232-.046-.348a.678.678 0 0 1 .16-.603l-.01-.007.01.007c1.14-.951 2.272-2.032 3.657-3.182l.003-.003a.678.678 0 0 1 .548-.151.678.678 0 0 1 .478.548c.035.233.073.466.111.698l.006.041.003.019.006.045.006.045c.014.103.027.205.04.307l.003.021c.01.09.02.18.031.269l.005.032.004.028.002.016c.012.11.023.22.035.329l.006.038c.01.072.019.144.029.215l.004.021.003.016c.012.11.023.22.036.33l.005.034c.013.105.026.211.04.316l.005.038c.013.105.026.21.04.316l.004.025c.015.102.029.204.044.306l.004.026.004.03c.005.033.01.065.014.098l.016.113c.016.12.032.239.048.358l.003.022c.017.119.034.239.051.357l.003.024c.016.118
